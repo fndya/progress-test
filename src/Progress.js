@@ -35,6 +35,7 @@ export class Progress {
         svg.setAttribute('role', 'progressbar');
         svg.setAttribute('aria-valuemin', '0');
         svg.setAttribute('aria-valuemax', '100');
+        svg.setAttribute('aria-label', 'Progress');
 
         svg.innerHTML = `
             <g class="progress__rotator">

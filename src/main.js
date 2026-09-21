@@ -15,6 +15,7 @@ progress.mount(progressContainer);
 
 valueInput.addEventListener('input', (event) => {
     progress.setValue(event.target.value);
+    valueInput.value = progress.getValue();
 });
 
 animateInput.addEventListener('change', (event) => {
