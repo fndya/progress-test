@@ -2,10 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Progress</title>
+
+    <link rel="stylesheet" href="./src/progress.css">
 </head>
+
 <body>
-    
+    <main class="demo">
+        <section class="demo__content">
+            <h1 class="demo__title">Progress</h1>
+
+            <div
+                class="progress-container"
+                id="progress"
+            ></div>
+
+            <div class="controls">
+                <label class="control">
+                    <input
+                        class="control__input"
+                        id="value"
+                        type="number"
+                        min="0"
+                        max="100"
+                        value="60"
+                    >
+
+                    <span class="control__label">
+                        Value
+                    </span>
+                </label>
+
+                <label class="control">
+                    <input
+                        class="control__switch"
+                        id="animate"
+                        type="checkbox"
+                    >
+
+                    <span class="control__label">
+                        Animate
+                    </span>
+                </label>
+
+                <label class="control">
+                    <input
+                        class="control__switch"
+                        id="hide"
+                        type="checkbox"
+                    >
+
+                    <span class="control__label">
+                        Hide
+                    </span>
+                </label>
+            </div>
+        </section>
+    </main>
+
+    <script
+        type="module"
+        src="./src/main.js"
+    ></script>
 </body>
 </html>
